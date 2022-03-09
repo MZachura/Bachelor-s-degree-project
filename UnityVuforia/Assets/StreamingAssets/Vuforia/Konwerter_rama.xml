@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="rama_zasyp_konwerter" motionHint="adaptive" trackingMode="default"/>
+
+</Tracking>
+
+<Assembly name="rama_zasyp_konwerters_assembly" assemblyId="1a686ca6214241c5bad6773f06939144">
+<Part name="rama_zasyp_konwerter" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0001" translation="1.63226e-07 -0.00076027 0.317638" rotation="AD: 0.9999167577878914 1.014542386905349 0.018118895910730556 181.436" trained="yes">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>

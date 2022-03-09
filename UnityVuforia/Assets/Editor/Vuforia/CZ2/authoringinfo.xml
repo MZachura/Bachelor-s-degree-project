@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="14.0" toolVersion="10.2.5">
+<ModelTarget name="Cz2" targetId="f1192426594443239ab8dc066655dc11" version="14.0" toolVersion="10.2.5" bbox="-0.152199 -0.106349 -0.000149 0.152199 0.106388 0.011142" previewImage="f1192426594443239ab8dc066655dc11_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="Cz2s_assembly" assemblyId="fc2b2d4b7186423d889a1be929196438">
+<Part name="Cz2" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0002" translation="-0.027371 0.0648756 0.482976" rotation="AD: 0.9999999940389901 -0.015806814389413313 0.007680971729805161 128.174" image="Cz2_viewpoint_0002.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>

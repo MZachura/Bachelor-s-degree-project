@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="DYSPENSER_uchwut_bok" motionHint="adaptive" trackingMode="default"/>
+
+</Tracking>
+
+<Assembly name="DYSPENSER_uchwut_boks_assembly" assemblyId="d1898a7674094994a4d26e8ab544dffc">
+<Part name="DYSPENSER_uchwut_bok" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0001" translation="0.00551014 -0.00125848 0.296981" rotation="AD: -0.9999999999999992 -0.00023706551402965435 0.00023527546018727792 89.5657" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>

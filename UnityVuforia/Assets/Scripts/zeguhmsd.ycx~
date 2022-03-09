@@ -1,0 +1,81 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Mono.Data.Sqlite;
+using System.Data;
+using System;
+using UnityEngine.UI;
+
+public class QCdb : MonoBehaviour
+{
+    public Text ControllNumberLabel;
+    private string dbName = "URI = file:/Database/QC.s3db";
+    void Start()
+    {
+        CreateDB();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+    public void CreateDB()
+    {
+        using (var connectton = new SqliteConnection(dbName))
+        {
+            connectton.Open();
+
+            using (var command = connectton.CreateCommand())
+            {
+                command.CommandText = "CREATE TABLE IF NOT EXISTS QCstatus (controll_ID INT PRIMARY KEY, status BOOLEAN);";
+                command.ExecuteNonQuery();
+            }
+            connectton.Close();
+        }
+    }
+    public void InsertOrRead()
+    {
+        string label = ControllNumberLabel.GetComponent<Text>().text.ToString();
+        int label1 = Int32.Parse(label);
+        using (var connectton = new SqliteConnection(dbName))
+        {
+            connectton.Open();
+
+            using (var command = connectton.CreateCommand())
+            { 
+                command.CommandText = $"SELECT * FROM QCstatus WHERE controll_ID = {label1};";
+                using (IDataReader reader = command.ExecuteReader())
+                {
+
+
+                    if (reader.Read() == null)
+                    {
+                        command.CommandText = $"INSERT INTO QCstatus (controll_ID) VALUES ({label1});";
+                        command.ExecuteNonQuery();
+                    }
+                    else
+                    {
+                        command.CommandText = $"SELECT * FROM QCNodes WHERE controll_ID = {label1};";
+                        using (IDataReader reader1 = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                Debug.Log("Controll_ID" + reader1["controll_ID"] + "\tnode" + reader1["node"] + "\t color" + reader1["color"]);
+
+                            }
+                            reader1.Close();
+
+                        }
+                        reader.Close();
+                    }
+                }
+            }
+            connectton.Close();
+        }
+    }
+    public void UpdateNode()
+    {
+
+    }
+}

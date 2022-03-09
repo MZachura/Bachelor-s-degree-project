@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="Cz1" motionHint="static" trackingMode="default"/>
+
+</Tracking>
+
+<Assembly name="Cz1s_assembly" assemblyId="5c44f245d73b4e049307ca96fd6cb23b">
+<Part name="Cz1" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="0.00678718 0.00080959 0.412633" rotation="AD: 0.9999999999329539 -0.012381473312047182 0.0009380052733656631 171.336" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="28.0" toolVersion="10.2.5">
+<ModelTarget name="rama_zasyp_konwerter" targetId="d50bb55cd5fc49398937392aae1ed33c" version="14.0" toolVersion="10.2.5" bbox="-0.081447 -0.083181 -0.002081 0.081424 0.083181 0.044036" previewImage="d50bb55cd5fc49398937392aae1ed33c_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="rama_zasyp_konwerters_assembly" assemblyId="1a686ca6214241c5bad6773f06939144">
+<Part name="rama_zasyp_konwerter" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0001" translation="1.63226e-07 -0.00076027 0.317638" rotation="AD: 0.9999167577878914 1.014542386905349 0.018118895910730556 181.436" image="rama_zasyp_konwerter_viewpoint_0001.png" trained="yes">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>
